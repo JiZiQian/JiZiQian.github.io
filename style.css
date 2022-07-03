@@ -1,6 +1,14 @@
 a.button{
   font-size:200%;
   text-decoration:none;
+  margin:30px auto;
+  background-color:#3ccad9;
+  padding:10px;
+  color:#5b5fdbc2;
+  text-align:center;
+  border-color:#4bd9e8;
+  cursor:pointer;
+  border-style:outset;
 }
 div.button{
   margin:30px auto;
