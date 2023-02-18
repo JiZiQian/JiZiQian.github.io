@@ -17,6 +17,11 @@ div.head{
   padding:20px;
   text-align:center;
 }
+div.tail{
+  display:block;
+  background-color:#f1f1f1;
+  padding:20px;
+}
 body{
   margin:0px;
 }
