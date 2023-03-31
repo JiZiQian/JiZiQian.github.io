@@ -17,6 +17,8 @@
   background-color: gold;
   border: 2px solid gold;
   border-radius: 2px;
+  margin: 0px 5px;
+  text-decoration: none;
 }
 .content a:hover{
   background-color: goldenrod;
