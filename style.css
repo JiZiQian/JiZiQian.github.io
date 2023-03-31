@@ -16,8 +16,8 @@
   padding: 14px 16px;
   background-color: gold;
   border: 2px solid gold;
-  border-radius: 2px;
-  margin: 0px 5px;
+  border-radius: 10px;
+  margin: 3px 5px;
   text-decoration: none;
 }
 .content a:hover{
