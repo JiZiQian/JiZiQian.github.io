@@ -1,23 +1,32 @@
-a.button{
-  font-size:200%;
-  text-decoration:none;
-  margin:30px auto;
-  background-color:#3ccad9;
-  padding:10px;
-  color:#5b5fdbc2;
-  text-align:center;
-  border-color:#4bd9e8;
-  cursor:pointer;
-  border-style:outset;
-  display:block;
-}
-div.head{
+.head{
   display:block;
   background-color:#f1f1f1;
   padding:20px;
   text-align:center;
 }
-div.tail{
+.content{
+  overflow: hidden;
+  background-color: cyan;
+}
+.content a{
+  float: left;
+  display: block;
+  color: azure;
+  text-align: center;
+  padding: 14px 16px;
+  background-color: gold;
+  border: 2px solid gold;
+  border-radius: 2px;
+}
+.content a:hover{
+  background-color: goldenrod;
+}
+.main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.tail{
   display:block;
   background-color:#f1f1f1;
   padding:20px;
