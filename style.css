@@ -36,3 +36,11 @@
 body{
   margin:0px;
 }
+.user{
+  float: right;
+}
+.user:after{
+  content: "";
+  display: table;
+  clear: both;
+}
