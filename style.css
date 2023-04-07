@@ -37,9 +37,6 @@ body{
   margin:0px;
 }
 .userName{
-  position:absolute;
-  top:10px;
-  right:10px;
   margin:0px;
   font-size:20px;
   font-style:italic;
