@@ -9,7 +9,46 @@
     <div class="head">
       <h1>欢迎，这是jzq服务器的导航页。</h1>
     </div>
-    <a href="https://jiziqian.github.io/zyx_2022_68" target="_blank" class="button" style="max-width:180px">小学服务器</a>
-    <a href="https://jiziqian.github.io/bjsdfz18ban" target="_blank" class="button" style="max-width:180px">初中服务器</a>
+<!--     <a href="https://jiziqian.github.io/zyx_2022_68" target="_blank" class="button" style="max-width:180px">小学服务器</a> -->
+<!--     <a href="https://jiziqian.github.io/bjsdfz18ban" target="_blank" class="button" style="max-width:180px">初中服务器</a> -->
+    <h1 id="chatgpt的背后：大模型之力">ChatGPT的背后：大模型之力</h1>
+    <h2 id="大模型的结构">大模型的结构</h2>
+    <p>
+	    <img src="https://img-blog.csdnimg.cn/20200324211418837.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RpbmsxOTk1,size_16,color_FFFFFF,t_70" alt="avatar">
+	    </p>
+	    <p>图中所示是chatgpt的结构，为
+		    <code>transformer模型</code>，由
+		    <code>谷歌</code>首次提出。
+	    </p>
+	    <h2 id="整体来看">整体来看</h2>
+	    <p>ChatGPT的大模型整体原理是：根据上文生成下文</p>
+	    <p>ChatGPT的一句话并不是直接生成的，而是一个词一个词&quot;蹦&quot;出来的</p>
+	    <h2 id="从零开始理解大模型">从零开始理解大模型</h2>
+	    <h3 id="词向量">词向量</h3>
+	    <p>词向量是一种把词汇映射到高维向量（或称为点）的方法，通过不断的迭代演化，我们可以得到词汇间的关系，相似或通常在一起的词汇在高维空间中会更接近</p>
+	    <p>通过词向量技术，我们可以让AI理解
+		    <code>人话</code>，并把
+		    <code>AI话</code>转成
+		    <code>人话</code>，是transformer模型中输入和输出的重要部分
+	    </p>
+	    <h3 id="输入详解">输入详解</h3>
+	    <p>输入即将上文（ChatGPT说过的词和用户问的话）输入进模型</p>
+	    <p>什么是
+		    <code>positional encoding</code>？这是位置标记，这样AI便不会把&#39;Tom chase Jerry&#39;理解成&#39;Jerry chase Tom&#39;
+	    </p>
+	    <h3 id="encoder和decoder">Encoder和Decoder</h3>
+	    <p>这是两个神经网络，OpenAI团队运用了一种特殊的小模型转大模型方法</p>
+	    <p>OpenAI团队首先训练出小模型，接下来运用了一个技巧把小模型参数转为大模型参数，减少了训练成本（大家可以上Arxiv搜索Greg Yang的论文详细了解）</p>
+	    <h3 id="输出">输出</h3>
+	    <p>根据Decoder的输出，&#39;输出&#39;部分可以将数据转为词汇</p>
+	    <h2 id="transformer的优缺点">Transformer的优缺点</h2>
+	    <p>（引用自某篇CSDN文章）</p>
+	    <p>Transformer虽然好，但它也不是万能的，还是存在这一些不足：</p>
+	    <p>优点：</p>
+	    <p>1.效果好</p>
+	    <p>2.可以并行训练，速度快</p>
+	    <p>3.很好地解决了长距离依赖的问题</p>
+	    <p>缺点：</p>
+      <p>1.完全基于self-attention，对于词语位置之间的信息有一定的丢失，虽然加入了positional encodeing来解决，但仍可以优化</p>
   </body>
 </html>
